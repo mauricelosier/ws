@@ -6,7 +6,7 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Step 3: Copy your static site files from your repo into the container
 # Replace "public" or "." with your specific build or source directory if needed
-COPY ./public /usr/share/nginx/html
+COPY ./www /usr/share/nginx/html
 
 # Step 4: Expose port 80 to access the web server
 EXPOSE 80
